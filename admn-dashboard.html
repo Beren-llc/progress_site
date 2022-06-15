@@ -18,17 +18,17 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="bg-light">
+  <body class="bg-secondary">
     <section>
       <div class="container mb-1 mt-2 p-2">
         <div class="row">
-          <div class="h4 text-secondary">Welcome to Admin's dashboard!</div>
+          <div class="h4 text-black">Welcome to Admin's dashboard!</div>
         </div>
       </div>
     </section>
     <section>
       <!-- teams projects active tasks and ongoing tasks -->
-      <div class="container-fluid">
+      <div class="container-fluid px-4">
         <div class="row p-1">
           <div class="col border p-3 bg-white">
             <p class="text-center">
@@ -36,20 +36,20 @@
             </p>
             <p class="teams text-center">3445</p>
           </div>
-          <div class="col border p-3">
+          <div class="col border p-3 bg-white">
             <p class="text-center">
               <i class="fa fa-code-fork mx-2 text-secondary"></i>Projects
             </p>
             <p class="projects text-center">4</p>
           </div>
-          <div class="col border p-3">
+          <div class="col border p-3 bg-white">
             <p class="text-center">
               <i class="fa fa-list-ul mx-2 text-secondary"></i> Active tasks
             </p>
             <p class="active__tasks text-center">6</p>
           </div>
 
-          <div class="col border mx-5 p-3">
+          <div class="col border p-3 bg-white">
             <p class="text-center">
               <i class="fa fa-clock-o mx-2 text-secondary"></i> Ongoing tasks
             </p>
@@ -58,37 +58,96 @@
         </div>
       </div>
 
-      <!-- end of teams projects active tasks and ongoing tasks-->
-
-      <!-- progress setion -->
-      <!-- <div class="container">
-        <div class="row">
-          <div class="col">
-            <canvas
-              id="progress__chart"
-              style="width: 100%; max-width: 600px"
-            ></canvas>
-          </div>
-        </div>
-      </div> -->
-      <!-- end of progress section -->
-
       <!--  -->
       <!-- projects setion -->
-      <div class="container-fluid mx-2 px-3">
+      <div class="container-fluid px-3">
         <div class="row">
-          <div class="col bg-white text-secondary m-3 border">
+          <!-- progress bar graph -->
+          <div class="col bg-white m-3 border">
             <div class="p mb-3 mt-1">completion of tasks</div>
             <div class="img-fluid">
               <p>This is a place holder image</p>
               <img src="chart.png" alt="placeholder chart" />
             </div>
           </div>
-          <div class="col bg-white text-secondary m-3 border">
-            <div class="p mb3 mt-1">Tasks Performance</div>
-            <div></div>
+          <!-- end -->
+          <!-- tasks performance -->
+          <div class="col bg-white m-3 border p-3">
+            <div class="p mb-3 mt-1">Tasks Performance</div>
+            <p>Assigned</p>
+            <div class="progress m-3">
+              <div
+                class="progress-bar progress-bar-striped bg-info"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 70%"
+              >
+                70%
+              </div>
+            </div>
+            <p>Completed</p>
+            <div class="progress m-3">
+              <div
+                class="progress-bar bg-success progress-bar-striped"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 50%"
+              >
+                50%
+              </div>
+            </div>
+
+            <p>Active</p>
+            <div class="progress m-3">
+              <div
+                class="progress-bar progress-bar-warning progress-bar-striped"
+                role="progressbar"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 60%"
+              >
+                60%
+              </div>
+            </div>
           </div>
-          <div class="col bg-white text-secondary m-3 border"></div>
+          <!-- end -->
+
+          <!-- leaderboad -->
+          <div class="col bg-white m-3 border p-3">
+            <p class="mt-1 mb-3">User progresses</p>
+            <div class="p-2 flex">
+              <p>
+                <i class="fa fa-circle text-light"></i> tasks
+                <i class="fa fa-circle text-success"></i> learning
+                <i class="fa fa-circle text-warning"></i> projects
+              </p>
+            </div>
+            <div>
+              <p>Caleb Mwema</p>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 40%"
+                >
+                  learning
+                </div>
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 10%"
+                >
+                  projects
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
         </div>
       </div>
 
@@ -96,29 +155,23 @@
 
       <!-- User progresses -->
 
-      <!-- <div class="container-fluid p-5">
-        <div class="row bg-dark text-light">
-          <div class="col p-4">
-            <img
-              src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-              class="card-img-top m-2"
-              alt="..."
-              style="width: 100px; height: 100px; border-radius: 50%"
-            />
-          </div>
-          <div class="col p-4">
-            <h3>User Name</h3>
-            <p>emailaddress@gmail.com</p>
-            <p>Status: <span>active</span></p>
-          </div>
-          <div class="col">
-            <h3></h3>
-          </div>
-        </div>
-      </div> -->
-
       <!-- end  -->
     </section>
+
+    <!-- active projects and TODos -->
+    <section>
+      <div class="container-fluid">
+        <div class="row p-2">
+          <div class="col bg-white mx-3 p-2">
+            <div class="h4">Active Projects</div>
+          </div>
+          <div class="col bg-white mx-3 p-2">
+            <div class="h4">Active Tasks: TODOs</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
 
     <!-- vanilla js -->
     <script src="index.js"></script>
