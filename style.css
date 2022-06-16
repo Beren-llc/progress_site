@@ -146,4 +146,8 @@ svg {
   border-radius: 50%;
 }
 
-/* chart placceholder */
+/* admin dashboard*/
+.user__progress {
+  display: grid;
+  grid-template-columns: 15% 80%;
+}
