@@ -3,7 +3,6 @@ body {
     padding: 0;
     height: 100%;
     font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
-    background-color: black;
 }
 
 .contact-container {
@@ -12,7 +11,7 @@ body {
     grid-gap: 0.2rem;
     place-items: center;
     grid-auto-rows: minmax(min-content, max-content);
-    color: green;
+    color: #2277cb;
 }
 
 .contact--image {
@@ -25,7 +24,7 @@ body {
     background-position: center;
     text-align: center;
     z-index: -1;
-    color: green;
+    color: white;
     font-size: 2rem;
 }
 

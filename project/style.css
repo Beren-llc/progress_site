@@ -169,7 +169,3 @@ body {
     height: 100px;
   }
 }
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
-}
