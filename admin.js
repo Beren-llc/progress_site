@@ -174,8 +174,25 @@ displayActiveProjects(activeProjects);
 /////////////////////////////////////////////
 /////////////////////////////////////////////
 
-const profileBtn = document.querySelector(".profile__link-btn");
-console.log(profileBtn.src);
+// delete user
+// const deleteBtn = document.querySelector("#delete__btn");
+// const userEmail = document.querySelector(".user__email");
+// deleteBtn.addEventListener("click", function (e) {
+//   // // e.preventDefault();
+//   // let index;
+//   // users.forEach((user, i) => {
+//   //   if (userEmail === user.userEmail) {
+//   //     index = i;
+//   //   }
+//   // });
 
-// user page template
-//
+//   // console.log(users[index]);
+//   // users.splice(index, 1);
+
+//   alert("User account deleted!!!");
+// });
+
+// document.getElementById("delete__btn").addEventListener("submit", function () {
+//   // alert("clicked");
+//   console.log("where is the problem!");
+// });

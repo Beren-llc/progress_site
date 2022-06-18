@@ -27,7 +27,7 @@
               alt="profile picture"
             />
             <div class="card-body">
-              <h5 class="card-title">Jennifer Lopez</h5>
+              <h5 class="card-title user__name">Jennifer Lopez</h5>
               <p class="card-text">
                 Tech enthusiasist, cracking problems is my specialization 🔓🔓🔓
               </p>
@@ -45,13 +45,14 @@
                 <button
                   type="button"
                   class="btn btn-primary mx-2"
-                  data-bs-toggle="modal"
-                  data-bs-target="#editDataModal"
+                  id="delete__btn"
                 >
                   delete
                 </button>
               </li>
-              <li class="list-group-item">Jenniferlopez@gmail.com</li>
+              <li class="list-group-item user__email">
+                Jenniferlopez@gmail.com
+              </li>
               <li class="list-group-item">Javascript</li>
               <li class="list-group-item">12-07-2022</li>
               <li class="list-group-item">+254711223344</li>
@@ -218,6 +219,7 @@
     <!-- modal end -->
 
     <script src="index.js"></script>
+    <script src="admin.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
