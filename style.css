@@ -15,7 +15,7 @@ color:00d4d3;-- teal
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
-:root {
+/* :root {
   --color-primary-one: #27283c;
   --color-primary-two: #ffffff;
 
@@ -25,7 +25,7 @@ color:00d4d3;-- teal
 
 body {
   background-color: var(--color-primary-gradient);
-}
+} */
 
 .card__profileimg {
   height: 400px;
@@ -152,11 +152,14 @@ svg {
 }
 
 /* card */
+/* cards */
 #user--image {
   height: 230px;
   width: 200px;
   border-radius: 50%;
 }
+
+/* section */
 
 /* admin dashboard*/
 .user__progress {

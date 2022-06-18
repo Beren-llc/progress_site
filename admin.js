@@ -123,7 +123,7 @@ function displayUserProgresses(users) {
     const html = `
     <div class="user__progress my-2 border-bottom">
       <div>
-        <a href="#" style="text-decoration: none;"><img src="user.jpg" alt="" class="img-fluid rounded-circle user__profile--image" style="height: 35px; width: 35px"/></a>
+        <a href="admn-user-edit.html" style="text-decoration: none;"><img src="user.jpg" alt="" class="img-fluid rounded-circle user__profile--image" style="height: 35px; width: 35px"/></a>
       </div>
 
       <div class="progress mt-2" style="height: 15px">
