@@ -8,8 +8,32 @@ body {
   overflow-x: hidden;
 }
 .bi {
-  color: #198754;
+  color: #7cfc00;
 }
 .card-icons__gray {
   background-color: #181818;
+}
+.btn {
+  background-color: white;
+  border: 2px solid #7cfc00;
+  border-radius: 5%;
+  color: #000;
+}
+.btn:hover {
+  background-color: #7cfc00;
+  color: white;
+}
+
+.home__link {
+  color: #7cfc00;
+  text-decoration: none;
+}
+.home__link:hover {
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+.text__area {
+  border: 2px solid #7cfc00;
 }
