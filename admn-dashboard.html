@@ -18,230 +18,200 @@
     />
   </head>
   <body class="bg-secondary app__container">
-    <section>
-      <div class="container mb-1 mt-2 p-2">
-        <div class="row">
-          <div class="h4 text-black">Welcome to Admin's dashboard!</div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <!-- teams projects active tasks and ongoing tasks -->
-      <div class="container-fluid px-4">
-        <div class="row p-1">
-          <div class="col border p-3 bg-white">
-            <p class="text-center">
-              <i class="fa fa-users mx-2 text-secondary"></i>Teams
-            </p>
-            <p class="teams text-center">3445</p>
-          </div>
-          <div class="col border p-3 bg-white">
-            <p class="text-center">
-              <i class="fa fa-code-fork mx-2 text-secondary"></i>Projects
-            </p>
-            <p class="projects text-center">4</p>
-          </div>
-          <div class="col border p-3 bg-white">
-            <p class="text-center">
-              <i class="fa fa-list-ul mx-2 text-secondary"></i> Active tasks
-            </p>
-            <p class="active__tasks text-center">6</p>
-          </div>
-
-          <div class="col border p-3 bg-white">
-            <p class="text-center">
-              <i class="fa fa-clock-o mx-2 text-secondary"></i> Ongoing tasks
-            </p>
-            <p class="ongoing__tasks text-center">6</p>
+    <main>
+      <section>
+        <div class="container mb-1 mt-2 p-2">
+          <div class="row">
+            <div class="h4 text-black">Welcome to Admin's dashboard!</div>
           </div>
         </div>
-      </div>
-
-      <!--  -->
-      <!-- projects setion -->
-      <div class="container-fluid px-3">
-        <div class="row">
-          <!-- progress bar graph -->
-          <div class="col bg-white m-3 border">
-            <div class="p-2 mb-3 mt-1 text-success text-center">
-              completion of tasks
+      </section>
+      <section>
+        <!-- teams projects active tasks and ongoing tasks -->
+        <div class="container-fluid px-4">
+          <div class="row p-1">
+            <div class="col border p-3 bg-white">
+              <p class="text-center">
+                <i class="fa fa-users mx-2 text-secondary"></i>Teams
+              </p>
+              <p class="teams text-center">3445</p>
             </div>
-            <div class="img-fluid">
-              <p>This is a place holder image</p>
-              <img src="chart.png" alt="placeholder chart" />
+            <div class="col border p-3 bg-white">
+              <p class="text-center">
+                <i class="fa fa-code-fork mx-2 text-secondary"></i>Projects
+              </p>
+              <p class="projects text-center">4</p>
+            </div>
+            <div class="col border p-3 bg-white">
+              <p class="text-center">
+                <i class="fa fa-list-ul mx-2 text-secondary"></i> Active tasks
+              </p>
+              <p class="active__tasks text-center">6</p>
+            </div>
+
+            <div class="col border p-3 bg-white">
+              <p class="text-center">
+                <i class="fa fa-clock-o mx-2 text-secondary"></i> Ongoing tasks
+              </p>
+              <p class="ongoing__tasks text-center">6</p>
             </div>
           </div>
-          <!-- end -->
-          <!-- tasks performance -->
-          <div class="col bg-white m-3 border p-3">
-            <div class="p-2 mb-3 mt-1 text-success text-center">
-              Tasks Performance
-            </div>
-            <p>Assigned</p>
-            <div class="progress m-3">
-              <div
-                class="progress-bar progress-bar-striped bg-info progress-bar__asigned"
-                role="progressbar"
-                aria-valuenow="70"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 70%"
-              >
-                70%
-              </div>
-            </div>
-            <p>Completed</p>
-            <div class="progress m-3">
-              <div
-                class="progress-bar progress-bar__completed bg-success progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 50%"
-              >
-                50%
-              </div>
-            </div>
+        </div>
 
-            <p>Active</p>
-            <div class="progress m-3">
-              <div
-                class="progress-bar progress-bar__active progress-bar-warning progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="60"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 60%"
-              >
-                60%
+        <!--  -->
+        <!-- projects setion -->
+        <div class="container-fluid px-3">
+          <div class="row">
+            <!-- progress bar graph -->
+            <div class="col bg-white m-3 border">
+              <div class="p-2 mb-3 mt-1 text-success text-center">
+                completion of tasks
+              </div>
+              <div class="img-fluid">
+                <p>This is a place holder image</p>
+                <img src="chart.png" alt="placeholder chart" />
               </div>
             </div>
-          </div>
-          <!-- end -->
-
-          <!-- leaderboad -->
-          <div class="col bg-white m-3 border p-3">
-            <p class="mt-1 mb-3 text-success text-center">User progresses</p>
-            <div class="users__progresses">
-              <div class="user__progress my-2 border-bottom">
-                <div>
-                  <a href="#" style="text-decoration: none;"><img
-                    src="user.jpg"
-                    alt=""
-                    class="img-fluid rounded-circle user__profile--image"
-                    style="height: 35px; width: 35px"
-                  /></a>
+            <!-- end -->
+            <!-- tasks performance -->
+            <div class="col bg-white m-3 border p-3">
+              <div class="p-2 mb-3 mt-1 text-success text-center">
+                Tasks Performance
+              </div>
+              <p>Assigned</p>
+              <div class="progress m-3">
+                <div
+                  class="progress-bar progress-bar-striped bg-info progress-bar__asigned"
+                  role="progressbar"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 70%"
+                >
+                  70%
                 </div>
-
-                <div class="progress mt-1" style="height: 15px">
-                  
-                  <div
-                    class="progress-bar bg-success"
-                    role="progressbar"
-                    style="width: 40%; height: 15px"
-                  >40%</div>
-                  
+              </div>
+              <p>Completed</p>
+              <div class="progress m-3">
+                <div
+                  class="progress-bar progress-bar__completed bg-success progress-bar-striped"
+                  role="progressbar"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 50%"
+                >
+                  50%
                 </div>
-                <p class="mx-5 mt-0 px-5 text-center text-success">javascript</p>
               </div>
-              
+
+              <p>Active</p>
+              <div class="progress m-3">
+                <div
+                  class="progress-bar progress-bar__active progress-bar-warning progress-bar-striped"
+                  role="progressbar"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width: 60%"
+                >
+                  60%
+                </div>
+              </div>
             </div>
-          </div>
-          <!-- end -->
-        </div>
-      </div>
+            <!-- end -->
 
-      <!-- end of rojects section -->
+            <!-- leaderboad -->
+            <div class="col bg-white m-3 border p-3">
+              <p class="mt-1 mb-3 text-success text-center">User progresses</p>
+              <div class="users__progresses">
+                <div class="user__progress my-2 border-bottom">
+                  <div>
+                    <a href="#" style="text-decoration: none"
+                      ><img
+                        src="user.jpg"
+                        alt=""
+                        class="img-fluid rounded-circle user__profile--image"
+                        style="height: 35px; width: 35px"
+                    /></a>
+                  </div>
 
-      <!-- User progresses -->
-
-      <!-- end  -->
-    </section>
-
-    <!-- active projects and TODos -->
-    <section>
-      <div class="container-fluid">
-        <div class="row p-2">
-          <div class="col bg-white mx-3 p-2">
-            <div class="h4 text-center">Active Projects</div>
-            <div class="p-2 projects__container">
-              <ul style="list-style: none;">
-                <li class="text-secondary">Progress site
-                  <div class="progress m-3">
-              <div
-                class="progress-bar bg-success progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="50"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 50%"
-              >
-                50%
+                  <div class="progress mt-1" style="height: 15px">
+                    <div
+                      class="progress-bar bg-success"
+                      role="progressbar"
+                      style="width: 40%; height: 15px"
+                    >
+                      40%
+                    </div>
+                  </div>
+                  <p class="mx-5 mt-0 px-5 text-center text-success">
+                    javascript
+                  </p>
+                  <button class="text-center profile__link-btn btn">
+                    view
+                  </button>
+                </div>
               </div>
-                </li>
-                <li class="text-secondary">Beren Community site
-                  <div class="progress m-3">
-              <div
-                class="progress-bar bg-warning progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="30"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 30%"
-              >
-                30%
-              </div>
-                </li>
-                <li class="text-secondary">Alumni site
-                  <div class="progress m-3">
-              <div
-                class="progress-bar bg-danger progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="10"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 10%"
-              >
-                10%
-              </div>
-                </li>
-                <li class="text-secondary">Hope childrens center
-                  <div class="progress m-3">
-              <div
-                class="progress-bar bg-info progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 80%"
-              >
-                80%
-              </div>
-                </li>
-              </ul>
             </div>
-          </div>
-          <div class="col bg-white mx-3 p-2">
-            <div class="h4 text-center">Active Tasks: TODOs</div>
-            <div class="todo_list">
-              <form action="POST">
-                <ul style="list-style:none;" class="p-3">
-                  <li class="my-3"><input type="checkbox" name="" id="" class="mx-3">merge pull requests</li>
-                  <li class="my-3 "><input type="checkbox" name="" id=""class="mx-3">preview forks</li>
-                  <li class="my-3"><input type="checkbox" name="" id=""class="mx-3">create hope centers git hub repo</li>
-                  <li class="my-3"><input type="checkbox" name="" id=" " class="mx-3">coordinate beren site's presentation</li>
-                
-                </ul>
-              </form>
-              
-            </div>
+            <!-- end -->
           </div>
         </div>
-      </div>
-    </section>
-    <!-- end -->
 
+        <!-- end of rojects section -->
+
+        <!-- User progresses -->
+
+        <!-- end  -->
+      </section>
+
+      <!-- active projects and TODos -->
+      <section>
+        <div class="container-fluid">
+          <div class="row p-2">
+            <div class="col bg-white mx-3 p-2 active__projects">
+              <div class="h4 text-center">Active Projects</div>
+              <ul style="list-style: none" class="p-2 projects__container"></ul>
+            </div>
+
+            <div class="col bg-white mx-3 p-2">
+              <div class="h4 text-center">Active Tasks: TODOs</div>
+              <div class="todo_list">
+                <form action="POST">
+                  <ul style="list-style: none" class="p-3">
+                    <li class="my-3">
+                      <input type="checkbox" name="" id="" class="mx-3" />merge
+                      pull requests
+                    </li>
+                    <li class="my-3">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        class="mx-3"
+                      />preview forks
+                    </li>
+                    <li class="my-3">
+                      <input type="checkbox" name="" id="" class="mx-3" />create
+                      hope centers git hub repo
+                    </li>
+                    <li class="my-3">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=" "
+                        class="mx-3"
+                      />coordinate beren site's presentation
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end -->
+    </main>
     <!-- vanilla js -->
     <!-- <script src="index.js"></script> -->
     <script src="admin.js"></script>

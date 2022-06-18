@@ -1,8 +1,86 @@
-/////////////////////////////////////
-// tasks perfomance variables
+// variables
+const containerProjects = document.querySelector(".projects__container");
+
 const assignedTasks = document.querySelector(".progress-bar__asigned");
 const completeTasks = document.querySelector(".progress-bar__completed");
 const activeTasks = document.querySelector(".progress-bar__active");
+
+const userProgressContainer = document.querySelector(".users__progresses");
+
+const activeProjects = [
+  {
+    projectName: "progress site",
+    totalMillestones: 10,
+    completed: 4,
+  },
+  {
+    projectName: "hope center site",
+    totalMillestones: 11,
+    completed: 8,
+  },
+  {
+    projectName: "e-learning",
+    totalMillestones: 13,
+    completed: 5,
+  },
+  {
+    projectName: "school site template",
+    totalMillestones: 10,
+    completed: 6,
+  },
+];
+
+// users
+const users = [
+  {
+    username: "Jennifer Lopez",
+    userEmail: "Jenniferlopez@gmail.com",
+    enrolmentDate: new Date(2022, 05, 01).toISOString(),
+    dateOfBirth: new Date(2000, 05, 02).toISOString(),
+    comments:
+      "Tech enthusiasist, cracking problems is my specialization 🔓🔓🔓",
+
+    moduleName: "Javascript",
+    moduleLectures: 320,
+    currentLecture: 190,
+  },
+  {
+    username: "Jen Watt",
+    userEmail: "Jen.watt45@gmail.com",
+    enrolmentDate: new Date(2022, 07, 04).toISOString(),
+    dateOfBirth: new Date(2002, 05, 02).toISOString(),
+    comments:
+      "Tech enthusiasist, cracking problems is my specialization 🔓🔓🔓",
+    moduleName: "React",
+    moduleLectures: 320,
+    currentLecture: 250,
+  },
+  {
+    username: "Calebson Matt",
+    userEmail: "csmatt43@gmail.com",
+    enrolmentDate: new Date(2022, 05, 07).toISOString(),
+    dateOfBirth: new Date(2001, 05, 23).toISOString(),
+    comments:
+      "Tech enthusiasist, cracking problems is my specialization 🔓🔓🔓",
+    moduleName: "TypeScript",
+    moduleLectures: 320,
+    currentLecture: 70,
+  },
+  {
+    username: "Tylor swift",
+    userEmail: "ts450@gmail.com",
+    enrolmentDate: new Date(2022, 05, 01).toISOString(),
+    dateOfBirth: new Date(2000, 05, 02).toISOString(),
+    comments:
+      "Tech enthusiasist, cracking problems is my specialization 🔓🔓🔓",
+    moduleName: "NodeJs",
+    moduleLectures: 320,
+    currentLecture: 300,
+  },
+];
+
+/////////////////////////////////////
+// tasks perfomance variables
 
 let tasks = [90, 50, 70]; //[0] -> assigned, [1] -> completed, [2] -> active tasks
 
@@ -35,30 +113,6 @@ calcTasksPercentage(tasks);
 
 ////////////////////////////////////////////////
 // user progresses
-const userProgressContainer = document.querySelector(".users__progresses");
-
-const users = [
-  {
-    moduleName: "Javascript",
-    moduleLectures: 320,
-    currentLecture: 190,
-  },
-  {
-    moduleName: "React",
-    moduleLectures: 320,
-    currentLecture: 250,
-  },
-  {
-    moduleName: "TypeScript",
-    moduleLectures: 320,
-    currentLecture: 70,
-  },
-  {
-    moduleName: "NodeJs",
-    moduleLectures: 320,
-    currentLecture: 300,
-  },
-];
 
 function displayUserProgresses(users) {
   userProgressContainer.innerHTML = "";
@@ -76,6 +130,8 @@ function displayUserProgresses(users) {
         <div class="progress-bar bg-success" role="progressbar"style="width: ${percentage}%; height: 15px" aria-valuenow="${percentage}" aria-valuemin="0" aria-valuemax="100">${percentage}%</div>
       </div>
       <p class="mx-5 mt-0 px-5 text-center text-success">${user.moduleName}</p>
+      
+
     </div>`;
 
     userProgressContainer.insertAdjacentHTML("beforeend", html);
@@ -83,3 +139,43 @@ function displayUserProgresses(users) {
 }
 
 displayUserProgresses(users);
+
+// ///////////////////////////////////////////////
+// active projects
+// console.log(containerProjects);
+
+function displayActiveProjects(activeProjects) {
+  containerProjects.innerHTML = "";
+  const barColors = ["bg-success", "bg-warning", "bg-info", "bg-danger"];
+  activeProjects.forEach((project, i) => {
+    let bgcolor = barColors[0]; //success by default
+    if (i % 2 == 0) bgcolor = barColors[1];
+    if (i % 3 == 0) bgcolor = barColors[2];
+    if (i % 4 == 0) bgcolor = barColors[3];
+
+    const percentage = Math.trunc(
+      (project.completed / project.totalMillestones) * 100
+    );
+    const html = `
+    <li class="text-secondary">${project.projectName}
+      <div class="progress m-3">
+      <div class="progress-bar ${bgcolor} progress-bar-striped" role="progressbar" aria-valuenow="${percentage}" aria-valuemin="0" aria-valuemax="100" style="width: ${percentage}%">
+        ${percentage}%
+      </div>
+    </li>`;
+
+    containerProjects.insertAdjacentHTML("afterbegin", html);
+  });
+}
+
+displayActiveProjects(activeProjects);
+
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+const profileBtn = document.querySelector(".profile__link-btn");
+console.log(profileBtn.src);
+
+// user page template
+//
