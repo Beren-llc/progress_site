@@ -22,6 +22,7 @@ body {
   grid-auto-rows: minmax(100px, auto);
   padding: 4rem;
   color: #ffffff;
+  transition: transform 1s, opacity 1s;
 }
 .card:nth-child(odd) {
   background-color: #27283c;
@@ -94,6 +95,20 @@ body {
 .card__content__src__lnks > li:hover {
   color: #00d4d3;
   cursor: pointer;
+}
+
+/* interchange effect */
+.card__intro-reverse {
+  grid-column: 2 / span end;
+}
+.card__content-reverse {
+  grid-column: 1;
+}
+
+/* reveal effect */
+.card--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 /* media queries */
