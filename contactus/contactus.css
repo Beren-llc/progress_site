@@ -37,3 +37,8 @@ input[type="email"],
 .text__area {
   border: 2px solid #7cfc00;
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20rem);
+}
