@@ -151,18 +151,10 @@ svg {
   height: 100%;
 } */
 
-/* card */
-/* cards */
-#user--image {
-  height: 230px;
-  width: 200px;
-  border-radius: 50%;
-}
-
-/* section */
-
 /* admin dashboard*/
 .user__progress {
   display: grid;
   grid-template-columns: 15% 80%;
 }
+
+/* user cards */
