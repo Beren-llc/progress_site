@@ -2,7 +2,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 75vh;
+  height: 100vh;
 }
 body {
   overflow-x: hidden;
@@ -41,4 +41,8 @@ input[type="email"],
 .hidden {
   opacity: 0;
   transform: translateY(20rem);
+}
+
+.section-1 {
+  transition: transform 1s ease-in-out;
 }
