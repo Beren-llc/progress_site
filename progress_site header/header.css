@@ -1,0 +1,33 @@
+a {
+  color: #092032;
+  transition: all 0.4s ease;
+  font-weight: 500;
+}
+
+.text-brand {
+  color: #7cfc00;
+}
+
+a:hover {
+  color: #7cfc00;
+}
+.navbar .navbar-nav .nav-link {
+  color: #092032;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #7cfc00;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #7cfc00;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.navbar {
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
