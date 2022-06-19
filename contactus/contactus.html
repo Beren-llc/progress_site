@@ -1,43 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="contactus.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="contactus.css" />
+  </head>
 
-
-</head>
-
-<body>
-
-    <main class="contact-container">
-        <div class="contact--image">
-            <h1>Contact us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquam deserunt quos.</p>
-
+  <body>
+    <section>
+      <div
+        class="
+          jumbotron
+          d-flex
+          align-items-center
+          text-white
+          jumbotron-image
+          shadow
+        "
+        style="background-image: url(./contact.jpg)"
+      >
+        <div class="container  ">
+          <h2 class='display-1 text-center'>Contact Us</h2>
+          <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb justify-content-center">
+              <li class="breadcrumb-item display-5"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active display-5" aria-current="page">Contact Us </li>
+            </ol>
+          </nav>
         </div>
-        <div class="visit-col col-small-1">
-            <div><i class="fa fa-home" aria-hidden="true"></i></div>
-            <h1>Visit us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam natus quaerat, sint omnis eius mollitia quasi dignissimos saepe laudantium officiis. Aperiam ipsa amet, ab assumenda placeat repudiandae hic perspiciatis neque?</p>
-        </div>
-        <div class="callUs-col col-small-2">
-            <div><i class="fa fa-phone" aria-hidden="true"></i></div>
-            <h1>Call us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, incidunt eos doloremque aperiam ad sapiente reiciendis. Cum libero earum pariatur provident officia illo maiores ab cumque expedita placeat? Error, voluptatem?</p>
-        </div>
-        <div class="reachUs-col col-small-3">
-            <div><i class="fa fa-envelope" aria-hidden="true"></i></div>
-            <h1>Reach us</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam rerum, ex excepturi perferendis enim vitae voluptates impedit aspernatur consectetur velit alias explicabo ducimus officia praesentium iure quo suscipit maiores dolor.</p>
-        </div>
+        
+      </div>
 
-    </main>
-</body>
+      <div class="row mt-3 p-4 m-5">
+        <h1 class="text-center">Reaching Our Office</h1>
+        <p class="text-center display-2">Find Our Location</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col text-center">
+          <div class="card card-icons__gray">
+            <h1 class="text-center">
+              <i class="bi bi-telephone-fill display-2 success"></i>
+            </h1>
+            <div class="card-body">
+              <h5 class="card-title text-white">Call Us</h5>
+              <p class="card-text text-white">+254 700000000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="card card-icons__gray">
+            <h1 class="text-center">
+              <i class="bi bi-geo-alt-fill display-2"></i>
+            </h1>
+            <div class="card-body">
+              <h5 class="card-title text-white">VISIT OUR OFFICE</h5>
+              <p class="card-text text-white">Moi University</p>
+            </div>
+          </div>
+        </div>
+        <div class="col text-center">
+          <div class="card card-icons__gray">
+            <h1 class="text-center">
+              <i class="bi bi-envelope-fill display-2"></i>
+            </h1>
+            <div class="card-body">
+              <h5 class="card-title text-white">Email Us</h5>
+              <p class="card-text text-white">johndoe@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container m-3 container-fluid h-100">
+        <h1 class="display-5 row justify-content-center align-items-center">
+          We Love to Hear
+        </h1>
 
+        <div class="container">
+          <div class="row">
+            <div class="col">
+            
+            </div>
+
+            <div class="col-8">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput2"
+                  placeholder="johndoe@gmail.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput2"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Example textarea</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="mb-3 text-end">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+              </div>
+            </div>
+
+            <div class="col">
+          
+            </div>
+          </div>
+
+
+
+
+       
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
