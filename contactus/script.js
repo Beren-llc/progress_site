@@ -1,3 +1,4 @@
+'use strict';
 let contact = document.querySelector('.contact__us--link');
 let form = document.querySelector('.form__container');
 let img = document.querySelector('.img__container');
